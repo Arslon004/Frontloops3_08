@@ -1,0 +1,236 @@
+html{box-sizing: border-box;}
+*,*::before,*::after{
+  box-sizing: inherit;
+}
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c2aff9;
+}
+.wrapper{
+  width: 800px;
+  background-color: #525773;
+  padding: 45px 40px 0;
+  margin-top: 45px;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+}
+.header_left .title{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #f08ba7;
+}
+.header_left p{
+  text-transform: uppercase;
+  color: #d0d0d0;
+  font-size: 0.6rem;
+}
+.header_right button{
+  padding: 14px 30px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 25px;
+  background-color: #525773;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: 0.2s ease opacity;
+  cursor: pointer;
+}
+.header_right button:hover{
+  opacity: 0.8;
+}
+
+.main_content{
+  margin: 35px 0 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_content-right{
+  position: relative;
+  width: 400px;
+  background: linear-gradient(to bottom, #4a4e67, #525773);
+  padding: 24px 20px 0;
+}
+.main_content-right::after{
+  content: '';
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  width: 80%;height: 13%;
+  background: linear-gradient(180deg,#a99595,transparent);
+  z-index: 1;
+  opacity: 0.3;
+}
+.main_content-right .title{
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+.main_content-text{
+  color: #aaa;
+}
+.main_content-text2 span{
+  color: #fff;
+  font-size: 0.8rem;
+}
+.main_content-text2{
+  color: #aaa;
+  font-size: 0.8rem;
+}
+.main_content-right button{
+  position: absolute;
+  padding: 15px 0;
+  width: 90%;
+  bottom: 0;
+  border-radius: 30px;
+  background-color: #525773;
+  border: 1px solid #aaa;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.2s ease opacity;
+  cursor: pointer;
+}
+.main_content-right button::before{
+  position: absolute;
+}
+.main_content-right button:hover{
+  opacity: 0.7;
+}
+.main_content-left{
+  position: relative;
+}
+.main_content-left{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.main_content-left img{
+  position: relative;
+  width: 300px;
+  display: block;
+  box-shadow: 0 25px 15px rgba(0, 0, 0, 0.5);
+}
+.main_content-left a i{
+  position: absolute;
+  top: 50%;left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 24px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.icons_part{
+  display: flex;
+  justify-content: space-between;
+}
+.icons_part-spans{
+  width: 10px;
+  height: 10px;
+  background-color: #f08ba7;
+  border-radius: 50%;
+  position: relative;
+}
+.icons_part-spans::before,.icons_part-spans::after{
+  content: '';
+  position: absolute;
+  width: 6px;height: 6px;
+  background-color: #aaa;
+  border-radius: 50%;
+}
+.icons_part-spans::before{
+  left: -13px;top: 2px;
+}
+.icons_part-spans::after{
+  right: -13px;top: 2px;
+}
+.icons_part div i{
+  transform: scale(1.4);
+  color: #fff;
+}
+.sitenav_ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.sitenav_li{
+  display: inline-block;
+  margin: 32px 0;
+}
+.sitenav_li+.sitenav_li{
+  margin-left: 35px;
+}
+.sitenav_link{
+  text-decoration: none;
+  font-size: 0.7rem;
+  color: #a9abb9;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.3s ease color;
+}
+.sitenav_link:hover{
+  color: #fff;
+}
+.sitenav_link.active{
+  color: #fff;
+}
+.active{
+  position: relative;
+}
+.sitenav_link.active::after{
+  content: '';
+  position: absolute;
+  width: 30px;height: 3px;
+  top: 20px;left: 0;
+}
+.sitenav_link.active::after{
+  content: '';
+  width: 30px;height: 2px;
+  background-color:#000;
+}
+
+.bottom_text{
+color: #aaa;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 1.2rem;
+}
+.bottom_part{
+  position: relative;
+  padding: 0 40px;
+  background-color: #3d3f5c;
+  margin: -10.5px -40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+.bottom_part-right input{
+  padding: 14px 90px 14px 30px;
+  color: #fff;
+  border: 1px solid #745575;
+  border-radius: 30px;
+  background-color: #525773;
+  outline: none;
+}
+.bottom_part-left a i{
+  color: #fff;
+  padding: 27px;
+  transition: 0.3s ease all;
+}
+.bottom_part-left a i:hover{
+  background-color: #51536d;
+}
